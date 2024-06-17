@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+    <link rel="stylesheet" href="./ejerc-3/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+       <h1>Ingresa la contraseña</h1>
+
+       <div class="seleccionar">
+            <select name="" value="" id="option1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+            </select>
+            <select name="" value="" id="option2">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+            </select>
+            <select name="" value="" id="option3">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+           </select>
+        </div>
+        
+        
+        <button id="verificar" onclick="
+        let option1 = document.querySelector('#option1').value;
+        let option2 = document.querySelector('#option2').value;
+        let option3 = document.querySelector('#option3').value;
+
+        let password = option1 + option2 + option3;
+    
+        if (password === '911') {
+        mensaje.innerHTML = 'El password 1 es correcto';
+        mensaje.style.color = 'yellow';
+        } else if (password === '714') {
+        mensaje.innerHTML = 'El password 2 es correcto'; 
+        mensaje.style.color = 'yellow';   
+        } else {
+        mensaje.innerHTML = 'El password es incorrecto';
+        mensaje.style.color = 'red';
+        }
+
+        ">Verificar</button>
+    </div>
+
+    <p id="mensaje">Resultado</p>
+    <a href="./index2.html">Volver</a>
+
+    <script src="./ejerc-3/js/script.js"></script>
+</body>
+</html>

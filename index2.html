@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stickers</title>
+    <link rel="stylesheet" href="./ejerc-2/css/style.css">
+</head>
+<body>
+    <h1 id="texto">Puedes llevar hasta 10 stickers en total</h1>
+    <section>
+        <div class="card">
+           <img src="./ejerc-2/img/messi.jpg" alt="">
+           <input id="cantidad1" value="" type="number"> 
+        </div>
+
+        <div class="card">
+           <img src="./ejerc-2/img/neymar.jpg" alt="">
+           <input id="cantidad2" value="" type="number"> 
+        </div>
+
+        <div class="card">
+          <img src="./ejerc-2/img/modric.jpg" alt="">
+          <input id="cantidad3" value="" type="number"> 
+        </div>
+        
+    </section>
+
+   <p id="mensaje"></p>
+   <button id="comprar" onclick="
+      let cantidad1 = Number(document.querySelector('#cantidad1').value);
+      let cantidad2 = Number(document.querySelector('#cantidad2').value);
+      let cantidad3 = Number(document.querySelector('#cantidad3').value);
+
+      let suma = cantidad1 + cantidad2 + cantidad3;
+
+      if (suma <= 10){
+        mensaje.innerHTML = 'Excelente elección ' + suma + ' tarjetas';
+      } else {
+        mensaje.innerHTML = 'Ups! Te haz excedido';
+      } 
+   ">Comprar</button>
+<div class="paginas">  
+   <a href="./index1.html">Volver</a>
+   <a href="./index3.html">Siguiente</a>
+</div>
+<script src="./ejerc-2/js/script.js"></script>
+</body>
+</html>

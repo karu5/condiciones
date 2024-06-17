@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click en la foto</title>
+    <link rel="stylesheet" href="./ejerc-1/css/style.css">
+</head>
+<body>
+    <h1>¡Haz click en la imagen!</h1>
+    <img id="imagen" src="./ejerc-1/img/rapanui.jpg" width="300" onclick="
+      
+      if (document.querySelector('#imagen').style.border === '2px solid red') {
+          document.querySelector('#imagen').style.border = '';
+       } else {
+        document.querySelector('#imagen').style.border = '2px solid red';
+       }
+"/>
+
+<a href="./index2.html">Siguiente</a>
+                           
+    <script src="./ejerc-1/js/script.js"></script>
+</body>
+</html>
